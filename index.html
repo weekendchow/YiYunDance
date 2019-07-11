@@ -7,23 +7,25 @@
 
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    
 </head>
 <body>
     <header>
         <div class="container-fluid p-0">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark py-md-3">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark py-md-2">
                 <a class="navbar-brand" href="#">艺韵舞蹈</a>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="mr-auto"></div>
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">关于我们 <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">课程安排</a>
-                        <a class="nav-item nav-link" href="#">舞种介绍</a>
-                        <a class="nav-item nav-link" href="#">导师团队</a>
-                        <a class="nav-item nav-link" href="#">活动表演</a>
-                        <a class="nav-item nav-link" href="#">联系我们</a>
+                        <a class="nav-item nav-link active" href="#about">关于我们 <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#schedule">课程安排</a>
+                        <a class="nav-item nav-link" href="#styles">舞种介绍</a>
+                        <a class="nav-item nav-link" href="#crew">导师团队</a>
+                        <a class="nav-item nav-link" href="#shows">活动表演</a>
+                        <a class="nav-item nav-link" href="#contact">联系我们</a>
                     </div>
                 </div>
             </nav>
@@ -86,7 +88,7 @@
                         在教学能力及舞蹈编排等方面都有独特的方式方法。并得到广大舞蹈爱好者的一致肯定。</p>               
                     </div>               
                 </div>
-            </div>     
+            </div>    
         </section>
         <section id='schedule'>
             <div class='schedule container-fluid text-center p-0'>
@@ -100,26 +102,34 @@
         </section>
         <section id='styles'>
             <div class="styles container-fluid p-0">
-                <h1 class='py-5 text-center'>舞种介绍</h1>
+                <h1 class='py-5 text-center styles-title'>舞种介绍</h1>
                 <div id="accordion">
                     <div class="card">
                         <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                                     aria-controls="collapseOne">
                                     民族舞
+                                </button>
+                                <button class="btn btn-link float-right" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne">
+                                    <img src="images/icon/plussolid.svg" alt="plusIcon" height="100%" width="18">
                                 </button>
                             </h5>
                         </div>
                 
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="row">
-                                <img src="images/styles/mzw.jpg" alt="stylesImg" class="col-md-4">
                                 <div class="card-body col-md-8">
-                                    民族舞泛指产生并流传于民间、受民俗文化制约、即兴表演但风格相对稳定、以自娱为主要功能的舞蹈形式。不同地区、国家、民族的民间舞蹈，由于受生存环境、风俗习惯、生活方式、民族性格、文化传统、宗教信仰等因素影响，以及受表演者的年龄性别等生理条件所限，在表演技巧和风格上有着十分明显的差异。民间舞不乏朴实无华、形式多样、内容丰富、形象生动等特点，历来都是各国古典舞、民间舞、宫廷舞和专业舞蹈创作不可或缺的素材来源。
-                                    民族民间舞是一个多层次的概念和可伸缩的界面，它可以包容各种程度的加工。民族舞是一个民族的标志物，（如孔雀舞等，就属于民族舞）是一个民族乃至一个国家的灵魂。它需要艺术家进行高度的再创造，从民间来最后又回到民间去，练习民族舞好处有如下：1、
-                                    有较强趣味性 2、 培养舞者气质 3、 让人心情愉悦 4、有益身心。
+                                    <p class="card-text">民族舞泛指产生并流传于民间、受民俗文化制约、即兴表演但风格相对稳定、以自娱为主要功能的舞蹈形式。
+                                    民族民间舞是一个多层次的概念和可伸缩的界面，它可以包容各种程度的加工。民族舞是一个民族的标志物，
+                                    （如孔雀舞等，就属于民族舞）是一个民族乃至一个国家的灵魂。它需要艺术家进行高度的再创造，从民间来最后又回到民间去，
+                                    练习民族舞好处有如下：1、有较强趣味性 2、 培养舞者气质 3、 让人心情愉悦 4、有益身心。</p>
                                 </div>
+                                <div class="card-img col-md-4">
+                                    <img src="images/styles/mzw.png" alt="stylesImg" height="200" width="200">
+                                </div>
+                                
                             </div>
                             
                         </div>
@@ -131,15 +141,23 @@
                                     aria-expanded="false" aria-controls="collapseTwo">
                                     古典舞
                                 </button>
+                                <button class="btn btn-link collapsed float-right" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    <img src="images/icon/plussolid.svg" alt="plusIcon" height="100%" width="18">
+                                </button>
                             </h5>
+                            
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="row">
-                                <img src="images/styles/gdw.jpg" alt="stylesImg" class="col-md-4">
                                 <div class="card-body col-md-8">
-                                    古典舞是指在民间传统舞蹈的基础上，经过历代专业工作者提炼、整理、加工、创造，并经过较长时期艺术实践的检验，流传下来的被认为是具有一定典范意义的和古典风格特点的舞蹈。
-                                    中国的古典舞创立于五十年代，曾一度被一些人称作“戏曲舞蹈”。它本身就是介于戏曲与舞蹈之间的混合物，也就是说还未完全从戏曲中蜕变出来，称它为戏曲。
+                                    <p class="card-text">古典舞是指在民间传统舞蹈的基础上，经过历代专业工作者提炼、整理、加工、创造，并经过较长时期艺术实践的检验，流传下来的被认为是具有一定典范意义的和古典风格特点的舞蹈。
+                                    中国的古典舞创立于五十年代，曾一度被一些人称作“戏曲舞蹈”。它本身就是介于戏曲与舞蹈之间的混合物，也就是说还未完全从戏曲中蜕变出来，称它为戏曲。</p>
                                 </div>
+                                <div class="card-img col-md-4">
+                                    <img src="images/styles/gdw.png" alt="stylesImg" height="200" width="200">
+                                </div>
+                                
                             </div>
                             
                         </div>
@@ -151,13 +169,21 @@
                                     aria-expanded="false" aria-controls="collapseThree">
                                     蒙古舞
                                 </button>
+                                <button class="btn btn-link collapsed float-right" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    <img src="images/icon/plussolid.svg" alt="plusIcon" height="100%" width="18">
+                                </button>
                             </h5>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="row">
-                                <img src="images/styles/mgw.jpg" alt="stylesImg" class="col-md-4">
                                 <div class="card-body col-md-8">
-                                    中国内蒙古自治区以及吉林、黑龙江等省蒙古族聚居地区的民间舞蹈。蒙古民族的舞蹈文化与他们的狩猎、游牧生活有密切联系。蒙古民族祖先的原始舞蹈形态，在新石器时代、青铜时代凿刻的阴山崖画、乌兰察布崖画中，有着生动真实的表现。在古代，蒙古族还有很多模仿凶猛动物的舞蹈，如“白海青”（白鹰）舞、熊舞、狮子舞、鹿舞等。这些舞蹈作为独立的形式，大都失传，但在萨满舞中仍有反映。
+                                    <p class="card-text">中国内蒙古自治区以及吉林、黑龙江等省蒙古族聚居地区的民间舞蹈。蒙古民族的舞蹈文化与他们的狩猎、游牧生活有密切联系。
+                                        蒙古民族祖先的原始舞蹈形态，在新石器时代、青铜时代凿刻的阴山崖画、乌兰察布崖画中，有着生动真实的表现。
+                                        在古代，蒙古族还有很多模仿凶猛动物的舞蹈，如“白海青”（白鹰）舞、熊舞、狮子舞、鹿舞等。这些舞蹈作为独立的形式，大都失传，但在萨满舞中仍有反映。</p>
+                                </div>
+                                <div class="card-img col-md-4">
+                                    <img src="images/styles/mgw.png" alt="stylesImg" height="200" width="200">
                                 </div>
                             </div>
                             
@@ -167,16 +193,118 @@
             </div>
         </section>    
         <section id='crew'>
-        
+            <div class="crew container-fluid text-center p-0">
+                <h1 class='py-5'>导师团队</h1>
+                <div class="crew-container row">
+                     <div class="instructor col-md-4">
+                        <img src="images/crew/c1.jpg" alt="instructor01" class="instr-img" style="width:100%">
+                        <div class="instr-middle">
+                            <div id="myTrigger01" class="instr-text" title="老师1什么什么">老师1介绍</div>
+                        </div>
+                        
+                     </div>
+                    <div class="instructor col-md-4">
+                        <img src="images/crew/c2.jpg" alt="instructor02" class="instr-img" style="width:100%">
+                        <div class="instr-middle">
+                            <div id="myTrigger02" class="instr-text" title="老师2什么什么">老师2介绍</div>
+                        </div>
+                        
+                    </div>
+                    <div class="instructor col-md-4">
+                        <img src="images/crew/c3.jpg" alt="instructor03" class="instr-img" style="width:100%">
+                        <div class="instr-middle">
+                            <div id="myTrigger03" class="instr-text" title="老师3什么什么">老师3介绍</div>
+                        </div>
+                    
+                    </div>
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id='shows'>
-        
+            <div class="crew container-fluid text-center p-0">
+                <h1 class='py-5 shows-title'>活动表演</h1>
+                <div class="row">
+                    <div class="shows-container col-md-2"> 
+                        <ul class="shows-list">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                        </ul>
+                    </div>
+                    <div class="show-slides w3-content w3-section col-md-8" style="max-width:50rem">
+                        <img class="mySlides" src="images/shows/s07.jpg" style="width:auto; height: 30rem;">
+                        <img class="mySlides" src="images/shows/s08.jpg" style="width:auto; height: 30rem;">
+                        <img class="mySlides" src="images/shows/s10.jpg" style="width:auto; height: 30rem;">
+                        <img class="mySlides" src="images/shows/s11.jpg" style="width:auto; height: 30rem;">
+                        <img class="mySlides" src="images/shows/s12.jpg" style="width:auto; height: 30rem;">
+                        <img class="mySlides" src="images/shows/s14.jpg" style="width:auto; height: 30rem;">
+                        <img class="mySlides" src="images/shows/s15.jpg" style="width:auto; height: 30rem;">
+                        <img class="mySlides" src="images/shows/s16.jpg" style="width:auto; height: 30rem;">
+                        <img class="mySlides" src="images/shows/s18.jpg" style="width:auto; height: 30rem;">
+                        <img class="mySlides" src="images/shows/s24.jpg" style="width:auto; height: 30rem;">
+                        <img class="mySlides" src="images/shows/s46.jpg" style="width:auto; height: 30rem;">
+                        <img class="mySlides" src="images/shows/s48.jpg" style="width:auto; height: 30rem;">
+                        <img class="mySlides" src="images/shows/s52.jpg" style="width:auto; height: 30rem;">
+                    
+                    </div>
+                    <div class="shows-container col-md-2">
+                        <ul class="shows-list">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Milk</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
         </section>
         <section id='contact'>
-        
+            <div class="crew container-fluid text-center p-0">
+                <h1 class='py-5'>联系我们</h1>
+                <div class="row">
+                    <div class="contact col-md-6">
+                        <h6 class="contact-title">想了解更多尽请联系我们!</h6>
+                        <p>地址：西安市莲湖区西门外西关正街英达大厦1303室</p>
+                        <p>（西门人人乐向西100米路南）</p>
+                        <p>电话：18591911581</p>
+                        <p>邮箱：xxxxxxx@xxx.com</p>
+
+                        <h6>更多图片视频！欢迎来加入我们！</h6>
+                        <div class="row">
+                            <div class="wechat col-md-3"></div>
+                            <div class="wechat col-md-3">
+                                <img src="images/QRcode/dy.jpg" alt="wechatQRcode" width="100rem" height="auto">
+                                <p>微信</p>
+                            </div>
+                            <div class="tictok col-md-3">
+                                <img src="images/QRcode/dy.jpg" alt="tictokQRcode" width="100rem" height="auto">
+                                <p>抖音</p>
+                            </div>
+                            <div class="wechat col-md-3"></div>
+                        </div>
+                       
+                    </div>
+                    <div class="map col-md-6">
+                        这里是百度地图
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            <p>© 2019 Copyright: YiYunDanceStudio</p>
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -185,5 +313,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/modelImg.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
 </body>
 </html>
